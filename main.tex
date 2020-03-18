@@ -13,7 +13,7 @@
         \item Spoken by \textasciitilde{}5,000-8,000 speakers
         \item Three villages in the Botlikh district of the Republic of Daghestan: Botlikh, Miarso, and Ashino
         \item Unwritten and mostly spoken at home; the Cyrillic script of Avar functions as an ad hoc writing system on social media
-        \item Evaluated as ``threatened'' by Ethnologue \citep{simonsfenning2018}, but many children still speak the language and attitudes are positive
+        \item Evaluated as ``threatened'' by Ethnologue \citet{simonsfenning2018}, but many children still speak the language and attitudes are positive
         \item Heavy influence from Avar and Russian 
     \end{itemize}
 \end{frame}
@@ -28,10 +28,10 @@
 
 \begin{frame}{Botlikh literature}
 \begin{itemize}
-    \item One full reference grammar in Georgian \citep{gudava1962}
-    \item Several short sketches mostly based on information contained in the grammar by Togo E. Gudava: \citep{gudava1967, azaev2000, saidova2001, magomedbekova2001, xalidova2017, alekseevverhees}
-    \item Several works on the lexicon and word formation \citep{azaev1975, sulejmanova2013, alekseev2016}
-    \item In general poorly described compared to other Andic languages like Godoberi or Bagvalal, BUT two Botlikh-Russian dictionaries are available to date \citep{saidovaabusov2012, alekseev2019}
+    \item One full reference grammar in Georgian \citet{gudava1962}
+    \item Several short sketches mostly based on information contained in the grammar by Togo E. Gudava: \citet{gudava1967, azaev2000, saidova2001, magomedbekova2001, xalidova2017, alekseevverhees}
+    \item Several works on the lexicon and word formation \citet{azaev1975, sulejmanova2013, alekseev2016}
+    \item In general poorly described compared to other Andic languages like Godoberi or Bagvalal, BUT two Botlikh-Russian dictionaries are available to date \citet{saidovaabusov2012, alekseev2019}
 \end{itemize}
 \end{frame}
 
@@ -52,17 +52,17 @@
 
 \begin{frame}{Two dictionaries}
 \begin{itemize}
-    \item \citep{saidovaabusov2012} compiled in the 2000s by a native speaker of Botlikh (Magomed G. Abusov) and an experienced linguist (Patimat A. Saidova)
-    \item \citep{alekseev2019} compiled in the 1960s/1970s by a native speaker of Botlikh and philologist (Xalil G. Azaev), later (in the 2000s) systematized by an experienced linguist (Mixail E. Alekseev), and published posthumously after the editing by Timur A. Maisak
+    \item \citet{saidovaabusov2012} compiled in the 2000s by a native speaker of Botlikh (Magomed G. Abusov) and an experienced linguist (Patimat A. Saidova)
+    \item \citet{alekseev2019} compiled in the 1960s/1970s by a native speaker of Botlikh and philologist (Xalil G. Azaev), later (in the 2000s) systematized by an experienced linguist (Mixail E. Alekseev), and published posthumously after the editing by Timur A. Maisak
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Two dictionaries}
 \begin{itemize}
     \item Comparable both quantitatively and qualitatively
-    \item \textasciitilde{}8,000 headwords for \citep{saidovaabusov2012} vs. \textasciitilde{}9,000 words and expressions for \citep{alekseev2019}
-    \item Although the data in \citep{alekseev2019} were collected several decades earlier, Magomed G. Abusov also consulted elderly speakers with the aim of collecting archaic vocabulary 
-    \item \citep{saidovaabusov2012} also contains some notes on Miarso; reference to Miarso variants is not explicit in \citep{alekseev2019}, but it seems that such variants are occasionally reported in this dictionary too
+    \item \textasciitilde{}8,000 headwords for \citet{saidovaabusov2012} vs. \textasciitilde{}9,000 words and expressions for \citet{alekseev2019}
+    \item Although the data in \citet{alekseev2019} were collected several decades earlier, Magomed G. Abusov also consulted elderly speakers with the aim of collecting archaic vocabulary 
+    \item \citet{saidovaabusov2012} also contains some notes on Miarso; reference to Miarso variants is not explicit in \citet{alekseev2019}, but it seems that such variants are occasionally reported in this dictionary too
     \item No metadata on the speakers consulted
     \item At first glance, the two resources seemed to display variation
 \end{itemize}
@@ -98,8 +98,14 @@
 \end{frame}
 
 \section{Data}
-\begin{frame}{Merging}
-From two .doc files to one .xls through a painstaking process of unification (George Moroz)
+\begin{frame}{Merging (George Moroz)}
+From two .doc files to one .xls:
+
+\begin{itemize}
+    \item .doc preprocessing: convert files to .html, change non-standard symbols, solve several tag problems (I, $^\text{H}$, etc.)
+    \item extract first bold entrance, parse parenthesis for grammar information
+\end{itemize}
+
 \begin{figure}[h]
 \centering
 \fbox{\includegraphics[scale=0.17]{images/dicts.jpg}}
@@ -109,12 +115,12 @@ From two .doc files to one .xls through a painstaking process of unification (Ge
 
 \begin{frame}{Extracting grammatical information}
 \begin{itemize}
-    \item Total number of lexemes extracted: 8,464 from \citep{saidovaabusov2012} and 6,821 from \citep{alekseev2019}
-    \item Nouns: 2,871 from \citep{saidovaabusov2012} and 3,097 from \citep{alekseev2019}
+    \item Total number of lexemes extracted: 8,464 from \citet{saidovaabusov2012} and 6,821 from \citet{alekseev2019}
+    \item Nouns: 2,871 from \citet{saidovaabusov2012} and 3,097 from \citet{alekseev2019}
     \begin{itemize}
         \item grammatical information: genitive and plural
     \end{itemize}
-    \item Verbs: 1,504 from \citep{saidovaabusov2012} and 1,640 from \citep{alekseev2019}
+    \item Verbs: 1,504 from \citet{saidovaabusov2012} and 1,640 from \citet{alekseev2019}
     \begin{itemize}
         \item grammatical information: habitual and aorist
     \end{itemize}
@@ -130,9 +136,30 @@ From two .doc files to one .xls through a painstaking process of unification (Ge
 \end{frame}
 
 \begin{frame}{Pairing}
+We manually checked for lexemes represented in both dictionaries to carry out phonological and morphological analysis 
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.45]{images/venn.png}
+\caption{The database}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Pairing}
+We manually checked for lexemes represented in both dictionaries to carry out phonological and morphological analysis 
 \begin{itemize}
-    \item We manually checked for lexemes represented in both dictionaries to carry out phonological and morphological analysis 
-    % Here we could show Garik's Eulero Venn diagram, but we should check the numbers because I have the impression that we made quite a mess in our database  
+    \item Those 2890 includes all POS
+    \item There are also multiple entrance of the same root\\
+    \citet{alekseev2019}: \textit{besqχé}
+     'behind', 
+    \textit{besqχéku}
+     `from behind' 
+     \textit{besqé-ssu-b}
+     `back/hind (adjective)'
+     \textit{héči besqérussubla}
+     `in the end'
+    \item there are also some sayings and proverbs that constituate separate entrance in a dictionary (about 670) \\
+     \textit{héči besqχérussubla}
+    `in the end'
 \end{itemize}
 \end{frame}
 
@@ -144,13 +171,115 @@ From two .doc files to one .xls through a painstaking process of unification (Ge
         \item masdars
         \item borrowings
     \end{itemize}
+    \item (In progress) Filter out superfluous entries for multi-word expressions and inflected forms
 \end{itemize}
     
 \end{frame}
 
-\section{Phonology}
+\section{Phonology: segments}
 \begin{frame}{Phonology}
-    % Garik's research
+\begin{itemize}
+    \item There are 1996 lexemes which look phonetically the same, and 909
+are different (31\%)
+    \item If we remove the stress sign, there are 2449 lexemes which look
+phonetically the same, and 456 are different (16\%)
+    \item[⇒] 15\% of lexemes have different stress pattern?.. \pause Yes, but including 265 (9\%) cases where stress is present in one dictionary and absent in the other.
+    \item What causes the difference between dictionaries?
+    \begin{itemize}
+        \item Stress pattern differences in 188 lexemes (about 6\%)
+        \item Multiple cases where there is a small difference that could be
+explained either as a typo or in terms phonological variation: \textit{čuhí}
+‘to run’ [aa] vs. \textit{čũhí} [sa], \textit{kusu} ‘cherry plum’ [aa] vs. \textit{kussu} [sa]
+        \item Multiple cases where Russian borrowings were adopted differently: \textit{a\textbf{w}tobus} ‘bus’ [aa] vs. \textit{a\textbf{b}tabus} [sa], \textit{bit\textbf{o}n} ‘milk can’ [aa] vs. \textit{bit\textbf{u}n} [sa], \textit{a\textbf{p}teka} ‘pharmacy’ [aa] vs. \textit{a\textbf{b}teka} [sa]
+        \item Morphological preferences: \textit{dinija=\textbf{w}} ‘pious’ [aa] vs. \textit{dinija=\textbf{b}} [sa]
+    \end{itemize}
+
+\end{itemize}    
+\end{frame}
+
+\begin{frame}{Phonology: segments}
+About 25 cases:\\
+
+\begin{tabular}{lll}
+\citet{alekseev2019} &\citet{saidovaabusov2012} & \\
+\textit{ãha\textbf{\underline{j}}r}   & \textit{ãhar}   & 'message’        \\
+\textit{beʒa\textbf{\underline{j}}r}   & \textit{beʒir}   & 'roasting’       \\
+\textit{mik'ku\textbf{\underline{j}}r} & \textit{mik'ːur} & 'swallowing’     \\
+\textit{reqχu\textbf{\underline{j}}r}  & \textit{reqχʷir} & 'fight’          \\
+\textit{reʃku\textbf{\underline{j}}r}  & \textit{reʃkur}  & 'overnight stay’ \\
+\textit{rikʷa\textbf{\underline{j}}r}  & \textit{rikʷar} & 'lighting’     \\ \hline
+\textit{χwardar} & \textit{χwardir} & 'digging' \\
+\textit{miʔar} & \textit{miʔar} & 'nose'\\ 
+\dots & \dots & \dots \\ 
+& & \\
+About 6 cases: & & \\
+\textit{ʃːalaj} & \textit{ʃːallaj} & 'silt' \\
+\textit{inuʕala} & \textit{inuʕalla} & 'everywhere' \\
+\textit{ʕila} & \textit{ʕilla} & 'reason' \\
+\dots & \dots & \dots \\
+\end{tabular}
+\end{frame}
+
+\begin{frame}{Phonology: compare Botlikh segments}
+\begin{figure}[h]
+\centering
+\includegraphics[width = \linewidth]{images/04_compare_botlikh_dicts_with_stress.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Phonology: compare Botlikh segments}
+\begin{figure}[h]
+\centering
+\includegraphics[width = \linewidth]{images/05_compare_botlikh_dicts_without_stress.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Zilo Andi data}
+
+Dictionary data for Zilo were collected during fieldtrips to Zilo in 2016–2019 with N. Rochant, S. Verhees, A. Martynova and A. Zakirova who contributed to the same FieldWorks project.
+
+\begin{itemize}
+    \item Contain morphological affixes
+    \item Doesn’t contain additional affixes in a lemma form
+    \item Contain different stems of the same lexeme (e. g. \textsc{sg.abs, sg.obl, pl.abs, pl.obl, pst, npst}). Those forms were removed during the analysis.
+    \item No information about stress
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Phonology: compare Botlikh and Zilo segments}
+\begin{figure}[h]
+\centering
+\includegraphics[width = \linewidth]{images/06_compare_botlikh_zilo.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Phonology: compare Botlikh and Zilo segments}
+\begin{figure}[h]
+\centering
+\includegraphics[width = \linewidth]{images/07_compare_botlikh_zilo.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Phonology: data--driven analysis of syllables}
+\begin{forest}
+[syllable, for tree={parent anchor=south, child anchor=north}
+[onset [{[str}, tier = word]][rhyme [nucleus [e, tier = word]][coda [{ŋθ]}, tier = word]]]]]
+\end{forest}
+
+\begin{itemize}
+    \item analyse all onsets of initial syllables in corpus
+    \item analyse all codas of final syllables in corpus
+    \item generalize  obtained initials and codas into a syllable model
+    \item check, whether this model describes all intervocal consonant clusters
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Phonology: data--driven analysis of syllables}
+\begin{figure}[h]
+\centering
+\includegraphics[width = \linewidth]{images/08_syllables.png}
+\end{figure}
 \end{frame}
 
 \section{Nominal morphology}
@@ -218,16 +347,18 @@ Can our dictionary data help us be more precise about the distribution/frequency
 \includegraphics[height=5.5cm]{images/plural.png}
 \end{figure}
 \centering
-\small (X-squared = 47.118, df = 2, p-value = 5.869e-11)
+\small (χ² = 47.118, df = 2, p-value = 5.869e-11)
 \end{frame}
 
 \begin{frame}{Plural suffixes in the dictionaries}
 \begin{itemize}
-    \item Preference for -\textit{(x)baɬi} over -\textit{de} in \citep{saidovaabusov2012} vs. the opposite trend in \citep{alekseev2019}
-    \item The higher frequency of -\textit{de} in \citep{alekseev2019} is partly due to masdars
+    \item Preference for -\textit{(x)baɬi} over -\textit{de} in \citet{saidovaabusov2012} vs. the opposite trend in \citet{alekseev2019}
+    \item The higher frequency of -\textit{de} in \citet{alekseev2019} is partly due to masdars
     \begin{itemize}
-        \item \citep{saidovaabusov2012} almost never report the plural form for such nouns, whereas \citep{alekseev2019} consistently report -\textit{de}
+        \item \citet{saidovaabusov2012} almost never report the plural form for such nouns, whereas \citet{alekseev2019} consistently report -\textit{de}
     \end{itemize}
+    % Try graph without masdars
+    % geom_text(color = "white", size = 8)
     \item Variation often involves (but is not restricted to) borrowings
     \begin{itemize}
         \item \textit{birgadir} `foreman' < \textit{birgadir-\textbf{zabaɬi}} vs. \textit{birgadir-\textbf{de}}
@@ -277,13 +408,13 @@ consonant   & {\color[HTML]{1B9045} 232} & {\color[HTML]{CE6301} 266} & {\color[
 \includegraphics[height=5.5cm]{images/genitive.png}
 \end{figure}
 \centering
-\small (X-squared = 13.523, df = 1, p-value = 0.0002357)
+\small (χ² = 13.523, df = 1, p-value = 0.0002357)
 \end{frame}
 
 \begin{frame}{Oblique stem formation in the dictionaries}
 \begin{itemize}
     \item Significant variation between the two dictionaries in the formation of oblique stems for nouns ending in a consonant
-    \item This again involves (but is not restricted to) borrowings (a general preference for -\textit{a}- over -\textit{i}- in \citep{saidovaabusov2012})
+    \item This again involves (but is not restricted to) borrowings (a general preference for -\textit{a}- over -\textit{i}- in \citet{saidovaabusov2012})
     \begin{itemize}
         \item \textit{dakument} `document' < \textit{dakument-\textbf{a}-ɬi} vs. \textit{dakument-\textbf{i}-ɬi}
         \item \textit{kassir} `cashier' < \textit{kassir-\textbf{a}-ɬi} vs. \textit{kassir-\textbf{i}-ɬi} 
@@ -386,8 +517,8 @@ sew up   & \textit{mik'-a-j} & \textit{mik'-a-j-\textbf{malih-e}} & \textit{mik'
     \item Basic verbs display little variation in the aorist (and no variation at all in the habitualis)
     \item Most variation is observed for derived and causative verbs:
     \begin{itemize}
-        \item Derived verbs: preference for auxiliary `be' in \citep{saidovaabusov2012} vs. `become' in \citep{alekseev2019} \\ BUT it seems that this is just a matter of personal taste for citation forms: examples in the dictionary entries show that both variants are possible
-        \item Causative verbs: full (older?) forms -\textit{malih-e} and -\textit{malih-u} in \citep{alekseev2019} vs. reduced form -\textit{mal-e} and synthetic -\textit{o} in \citep{saidovaabusov2012} \\ This might be interpreted as diachronic variation, since the data in \citep{alekseev2019} are older
+        \item Derived verbs: preference for auxiliary `be' in \citet{saidovaabusov2012} vs. `become' in \citet{alekseev2019} \\ BUT it seems that this is just a matter of personal taste for citation forms: examples in the dictionary entries show that both variants are possible
+        \item Causative verbs: full (older?) forms -\textit{malih-e} and -\textit{malih-u} in \citet{alekseev2019} vs. reduced form -\textit{mal-e} and synthetic -\textit{o} in \citet{saidovaabusov2012} \\ This might be interpreted as diachronic variation, since the data in \citet{alekseev2019} are older
     \end{itemize}
 \end{itemize}
 \end{frame}
