@@ -93,18 +93,19 @@
 
 \section{Data}
 \begin{frame}{Merging (George Moroz)}
-From two .doc files to one .xls:
-
-\begin{itemize}
-    \item .doc preprocessing: convert files to .html, change non-standard symbols, solve several tag problems (I, $^\text{H}$, etc.)
-    \item extract first bold entrance, parse parenthesis for grammar information
-\end{itemize}
-
 \begin{figure}[h]
 \centering
 \fbox{\includegraphics[scale=0.17]{images/dicts.jpg}}
 \caption{Merging the dictionaries}
 \end{figure}
+\end{frame}
+
+\begin{frame}{Merging (George Moroz)}
+From two .doc files to one .xls:
+\begin{itemize}
+    \item .doc preprocessing: convert files to .html, change non-standard symbols, solve several tag problems (I, $^\text{H}$, etc.)
+    \item extract first bold entrance, parse parenthesis for grammar information
+\end{itemize}
 \end{frame}
 
 \begin{frame}{Extracting grammatical information}
@@ -166,29 +167,28 @@ We manually checked for lexemes represented in both dictionaries to carry out ph
 \section{Phonology: segments}
 \begin{frame}{Phonology}
 \begin{itemize}
-    \item There are 1,996 lexemes which look phonetically the same, while 909
-are different (31\%)
-    \item If we remove the stress sign, there are 2,449 lexemes which look
-phonetically the same, and 456 are different (16\%)
+    \item There are 1,996 lexemes which look phonetically the same, while 909 are different (31\%)
+    \item If we remove the stress sign, there are 2,449 lexemes which look phonetically the same, and 456 are different (16\%)
     \item[⇒] 15\% of lexemes have different stress pattern?.. \pause Yes, but including 265 (9\%) cases where the stress is present in one dictionary and absent in the other
-    \item What causes the difference between the two dictionaries?
-    \begin{itemize}
-        \item Stress pattern differences in 188 lexemes (about 6\%)
-        \item Multiple cases where there is a small difference that could be
-explained either as a typo or in terms of phonological variation: \textit{čuhí}
-‘to run’ [aa] vs. \textit{čũhí} [sa], \textit{kusu} ‘cherry plum’ [aa] vs. \textit{kussu} [sa]
-        \item Multiple cases where Russian borrowings were adopted differently: \textit{a\textbf{w}tobus} ‘bus’ [aa] vs. \textit{a\textbf{b}tabus} [sa], \textit{bit\textbf{o}n} ‘milk can’ [aa] vs. \textit{bit\textbf{u}n} [sa], \textit{a\textbf{p}teka} ‘pharmacy’ [aa] vs. \textit{a\textbf{b}teka} [sa]
-        \item Morphological preferences: \textit{dinija=\textbf{w}} ‘pious’ [aa] vs. \textit{dinija=\textbf{b}} [sa]
-    \end{itemize}
-
 \end{itemize}    
 \end{frame}
 
-\begin{frame}{Phonology: segments}
-About 25 cases:\\
+\begin{frame}{Phonology}
+\begin{itemize}
+    \item What causes the difference between the two dictionaries?
+    \begin{itemize}
+        \item Stress pattern differences in 188 lexemes (about 6\%)
+        \item Multiple cases where there is a small difference that could be explained either as a typo or in terms of phonological variation: \textit{čuhí} ‘to run’ [aa] vs. \textit{čũhí} [sa], \textit{kusu} ‘cherry plum’ [aa] vs. \textit{kussu} [sa]
+        \item Multiple cases where Russian borrowings were adopted differently: \textit{a\textbf{w}tobus} ‘bus’ [aa] vs. \textit{a\textbf{b}tabus} [sa], \textit{bit\textbf{o}n} ‘milk can’ [aa] vs. \textit{bit\textbf{u}n} [sa], \textit{a\textbf{p}teka} ‘pharmacy’ [aa] vs. \textit{a\textbf{b}teka} [sa]
+        \item Morphological preferences: \textit{dinija=\textbf{w}} ‘pious’ [aa] vs. \textit{dinija=\textbf{b}} [sa]
+    \end{itemize}
+\end{itemize}
+\end{frame}
 
+\begin{frame}{Phonology: segments}
 \begin{tabular}{lll}
 \citet{alekseev2019} &\citet{saidovaabusov2012} & \\
+\textbf{About 25 cases}: & & \\
 \textit{ãha\textbf{\underline{j}}r}   & \textit{ãhar}   & 'message’        \\
 \textit{beʒa\textbf{\underline{j}}r}   & \textit{beʒir}   & 'roasting’       \\
 \textit{mik'ku\textbf{\underline{j}}r} & \textit{mik'ːur} & 'swallowing’     \\
@@ -198,8 +198,7 @@ About 25 cases:\\
 \textit{χwardar} & \textit{χwardir} & 'digging' \\
 \textit{miʔar} & \textit{miʔar} & 'nose'\\ 
 \dots & \dots & \dots \\ 
-& & \\
-About 6 cases: & & \\
+\textbf{About 6 cases}: & & \\
 \textit{ʃːalaj} & \textit{ʃːallaj} & 'silt' \\
 \textit{inuʕala} & \textit{inuʕalla} & 'everywhere' \\
 \textit{ʕila} & \textit{ʕilla} & 'reason' \\
@@ -511,13 +510,67 @@ sew up   & \textit{mik'-a-j} & \textit{mik'-a-j-\textbf{malih-e}} & \textit{mik'
 \end{frame}
 
 \section{Discussion}
-\begin{frame}{Discussion}
-    
+\begin{frame}{Variation}
+The comparison of two dictionaries allowed to identify different types of variation in Botlikh
+\begin{itemize}
+    \item Phonological variation
+    \begin{itemize}
+        \item stress patterns
+        \item syllable structure
+    \end{itemize}
+    \item Morphological variation
+    \begin{itemize}
+        \item nouns: plural suffixes and oblique stem formation
+        \item verbs: present (habitualis) and past (aorist) forms
+    \end{itemize}
+\end{itemize}
+Variation seems to affect (to a greater extent) specific groups of words
+\begin{itemize}
+    \item nouns: borrowings and masdars (both at the phonological and at the morphological level)
+    \item verbs: derived and causative
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Variation}
+How do we explain the variation observed?
+\begin{itemize}
+    \item Idiolectal variation?
+    \item Diachronic variation?
+    \item Personal preferences of the author?
+    \item ...?
+\end{itemize}
 \end{frame}
 
 \section{Methodological remarks}
 \begin{frame}{Methodological remarks}
-    
+\begin{itemize}
+    \item Two similar datasets collected independently in a small language community approximately in the same time period can nevertheless display considerable variation
+    \item This demonstrates the importance of transparency in data collection \\ i.e. metadata on the speakers consulted
+    \item And methodological decisions \\ e.g. what is included or not as a separate dictionary entry
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Methodological remarks}
+\begin{itemize}
+    \item The availability of comparable material on which quantitative investigations can be conducted is a rare luck for such small languages like Botlikh
+    \item This precious information can be used to provide numerical approximations for impressionistic observations reported in the available literature on the language
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Methodological remarks}
+% something about data-driven phonological analysis?
+\begin{itemize}
+    \item 
+\end{itemize}
+\end{frame}
+
+\section{Further research}
+\begin{frame}{Further research}
+\begin{itemize}
+    \item Other Avar-Andic dictionaries are being added (Avar, Godoberi, Karata, Tindi, Chamalal, Bagvalal, Akhvakh)
+    \item The same procedure of data processing and extraction of grammatical information is being carried out
+    \item This will give us the opportunity to conduct comparative analysis at different linguistic levels (phonology, morphology, lexicon) of the different languages of the Avar-Andic branch of EC languages
+\end{itemize}
 \end{frame}
 
 \section{The end}
