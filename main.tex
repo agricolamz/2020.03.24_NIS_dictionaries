@@ -287,6 +287,7 @@ Two topics investigated:
     \item Formation of the genitive
     \begin{itemize}
         \item to study alternations in the formation of oblique stems
+        % The same should be done for plural stem formation
     \end{itemize}
 \end{itemize}
 Comparison of the two resources to look for possible variation in such areas of nominal morphology \\ (based on 1,072 pairs retrieved during the first annotation round)
@@ -420,25 +421,51 @@ consonant   & {\color[HTML]{1B9045} 232} & {\color[HTML]{CE6301} 266} & {\color[
 
 \section{Verbal morphology}
 \begin{frame}{Verbal morphology}
-Formation of present (habitualis) and past (aorist) forms of:
+
+\begin{table}[]
+\caption{Basic inflectional paradigm of verbs}
+\label{tab:verbinfl}
+\begin{tabular}{ll}
+{\color[HTML]{CA0887} \textbf{Infinitive}}               & -i            \\
+{\color[HTML]{CA0887} \textbf{Habitual}}                 & -e            \\
+{\color[HTML]{CA0887} \textbf{Aorist / General converb}} & -a / -u / -iw \\
+Progresive converb                                       & -ata / -a     \\
+\textbf{Future}                                          & -ik'a-\textsc{cm}      \\
+\textbf{Imperative}                                      & -a / -i / -j 
+\end{tabular}
+\end{table}
+
+\end{frame}
+
+\begin{frame}{Verbal morphology}
+Three types of infinitives / inflection
+
 \begin{itemize}
     \item Basic verbs (infinitive in -\textit{i})
     \item Derived verbs (infinitive in -\textit{ɬi})
     \item Causative verbs (infinitive in -\textit{a-j})
 \end{itemize}
-Comparison of the two resources to look for possible variation in such areas of verbal morphology \\ (based on 554 pairs retrieved during the first annotation round)    
+\end{frame}
+
+\begin{frame}{Verbal morphology}
+\begin{itemize}
+    \item Compare inflectional forms of 554 pairs of verbs retrieved during the first annotation round
+    \item Distribution of aorist suffixes
+    \item Correlation of infinitive type with habitual and aorist inflection
+    \item Agreement between sources
+\end{itemize}
 \end{frame}
 
 \begin{frame}{Basic verbs}
 \begin{itemize}
-    \item Habitualis: -\textit{e}
+    \item Habitual: -\textit{e}
     \item Aorist: -\textit{a} / -\textit{u} / -\textit{iw}
 \end{itemize}
 \begin{table}[]
-\caption{Basic verbs: inflection}
 \centering
+\caption{Basic verbs: inflection}
 \begin{tabular}{l|l|l|l}
-        & Infinitive       & Habitualis       & Aorist            \\ \hline
+        & Infinitive       & Habitual       & Aorist            \\ \hline
 see     & \textit{haʁ-i}   & \textit{haʁ-e}   & \textit{haʁ-\textbf{a}}    \\
 do      & \textit{ih-i}    & \textit{ih-e}    & \textit{ih-\textbf{u}}     \\
 be able & \textit{bažar-i} & \textit{bažar-e} & \textit{bažar-\textbf{iw}}
@@ -446,25 +473,66 @@ be able & \textit{bažar-i} & \textit{bažar-e} & \textit{bažar-\textbf{iw}}
 \end{table}
 \end{frame}
 
-\begin{frame}{Basic verbs}
+\begin{frame}{Basic verbs: Aorist}
+
 \begin{figure}[h]
 \centering
 \caption{Aorist suffixes in the dictionaries}
 \includegraphics[scale=0.5]{images/pst.png}
 \end{figure}
+
 \end{frame}
 
-\begin{frame}{Derived verbs}
-Analytic formation of both the habitualis and the aorist with auxiliaries
+\begin{frame}{Basic verbs: Aorist}
 \begin{itemize}
-    \item be: \textit{b-uk'-e}, \textit{b-uk'-a}
-    \item become: \textit{b-ah-e}, \textit{b-ah-u}
+    \item There is more variation than the plot shows
+
+\begin{table}[]
+\caption{Aorist suffixes in both dictionaries}
+\label{tab:pstcorr}
+\begin{tabular}{l|cccc}
+S\&A / A\&A & \multicolumn{1}{l}{a} & \multicolumn{1}{l}{iw} & \multicolumn{1}{l}{u} & \multicolumn{1}{l}{other} \\ \hline
+a           & 72                    & 6                      & 3                     & 4                         \\
+iw          & 3                     & 55                     & 6                     & 3                         \\
+u           & 3                     & 4                      & 142                   & 2                         \\
+other       & 3                     & 1                      & 4                     & 0                        
+\end{tabular}
+\end{table}
+\pause
+\vfill
+\item But still not a lot
+\item And no systematic correspondence
 \end{itemize}
+\end{frame}
+
+\begin{frame}{Verbal morphology}
+
+Same proportions if we use all data (not just pairs)
+
+\begin{figure}[h]
+\centering
+\caption{Past tenses in all dictionary data}
+\includegraphics[scale=0.4]{images/pstfull.png} % add image
+\end{figure}
+
+\small (x-squared = 0.347, df = 2, p-value = 0.8407) %p-value > 0.05, we cannot reject the 0 hypothesis that the dictionaries are the same
+
+\end{frame}
+
+
+\begin{frame}{Derived verbs}
+
+\begin{itemize}
+    \item Derive verbs from adverbs, converbs, and...?
+    \item Stem typically ends in \textit{-a}
+    \item Analytic inflection: stem + `be' \textit{b-uk'-} or `become' \textit{b-ah-}
+\end{itemize}
+
 \begin{table}[]
 \caption{Derived verbs: inflection}
 \centering
 \begin{tabular}{l|l|l|l}
-      & Infinitive         & Habitualis             & Aorist                 \\ \hline
+      & Infinitive         & Habitual             & Aorist                 \\ \hline
 roar  & \textit{buda-ɬi}   & \textit{buda \textbf{b-uk'-e}}  & \textit{buda \textbf{b-uk'-a}}  \\
 bleat & \textit{baʕada-ɬi} & \textit{baʕada \textbf{b-ah-e}} & \textit{baʕada \textbf{b-ah-u}}
 \end{tabular}
@@ -473,15 +541,14 @@ bleat & \textit{baʕada-ɬi} & \textit{baʕada \textbf{b-ah-e}} & \textit{baʕad
 
 \begin{frame}{Causative verbs}
 \begin{itemize}
-    \item -\textit{o} < \textit{*-a-u} [\textsc{-caus-aor}]
-    \item -\textit{mal-e} a reduced form of -\textit{malih-e}?
-    \item -\textit{mal-o} rarely found in the data
+    \item mixed paradigm: synthetic and semi-periphrastic forms
+    \item stem + \textit{-a} + infinitive + inflection / stem + inflection
 \end{itemize}
 \begin{table}[]
 \caption{Causative verbs: inflection}
 \centering
 \begin{tabular}{l|l|l|l}
-         & Infinitive        & Habitualis                & Aorist                    \\ \hline
+         & Infinitive        & Habitual                & Aorist                    \\ \hline
 resettle & \textit{guč-a-j}  & \textit{guč-\textbf{e}}            & \textit{guč-\textbf{o}}            \\
 roast    & \textit{žad-a-j}  & \textit{žad-a-j-\textbf{mal-e}}    & \textit{žad-a-j-\textbf{mal-o}}    \\
 sew up   & \textit{mik'-a-j} & \textit{mik'-a-j-\textbf{mal-e}}   & \textit{mik'-\textbf{o}}           \\
@@ -490,29 +557,85 @@ sew up   & \textit{mik'-a-j} & \textit{mik'-a-j-\textbf{malih-e}} & \textit{mik'
 \end{table}
 \end{frame}
 
-\begin{frame}{Habitualis in the dictionaries}
-\begin{figure}[h]
-\centering
-\caption{Habitualis}
-\includegraphics[scale=0.45]{images/infxprs.png}
-\end{figure}
+\begin{frame}{Causative verbs}
+\begin{itemize}
+    \item \textit{-mal-} is likely a reduced form of \textit{-malih-}
+    \item Both are of unknown origin
+    \item \textit{-malih-} possibly contains the verb \textit{ih-} `make, do'
+    \item \textit{-o} *< \textit{-a-u}
+    \item Relationship between the synthetic and semi-periphrastic inflection is unclear: competing constructions or truncation/reduction?
+\end{itemize}
 \end{frame}
 
-\begin{frame}{Aorist in the dictionaries}
+
+\begin{frame}{Infinitive and habitual}
+
+\begin{figure}[h]
+\centering
+\caption{Habitual}
+\includegraphics[scale=0.45]{images/infxprs.png}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{Infinitive and aorist}
+
 \begin{figure}[h]
 \centering
 \caption{Aorist}
 \includegraphics[scale=0.45]{images/infxpst.png}
 \end{figure}
+
+\end{frame}
+
+\begin{frame}{Derived verb inflection}
+\textsc{Entry `bleat'} \textbf{baʕada/ɬí}, \textit{prs.} \textbf{bahé}, \textit{pst.} \textbf{báhu} \citep{alekseev2019}
+
+\lb{ex:lamb}{\gll ha-b ƛ'et'ír \textbf{baʕáda} \textbf{b-uk'-é}\\
+{\Dem}-{\N} lamb bleat {\N}-be-{\Hab}\\
+\trans `That lamb often bleats.'}
+
+\pause
+\vfill
+
+\textsc{Entry `roar'} \textbf{buːda/ɬí}, \textit{prs.} \textbf{buké}, \textit{pst.} \textbf{búk'a} \citep{saidovaabusov2012}
+
+\lb{ex:ox}{\gll únsa \textbf{buːda} \textbf{b-áh-u}\\
+ox roar {\N}-become-{\Aor}\\
+\trans `The ox started to roar.'}
+\end{frame}
+
+\begin{frame}{Causative verb inflection}
+
+\begin{table}[h]
+\caption{Causative paradigms in two Botlikh dictionaries}
+\label{tab:caus}
+\begin{tabular}{l|l|l|l}
+     & \multicolumn{1}{c|}{infinitive} & \multicolumn{1}{c|}{present} & \multicolumn{1}{c}{past} \\ \hline
+A\&A & -a-j                            & malih-e                      & malih-u                  \\
+     &                                 & -e                           & -o                       \\ \hline
+S\&A & -a-j                            & mal-e                        & -o                       \\
+     &                                 & -e                           & -o                       \\
+     &                                 & mal-e                        & mal-o (1x)                  
+\end{tabular}
+\end{table}
+
+\pause
+
+\begin{itemize}
+    \item The bulk of material in A\&A was collected several decades earlier with respect to S\&A
+    \item A\&A in many cases note synthetic inflection as a variant
+\end{itemize}
 \end{frame}
 
 \begin{frame}{Variation}
 \begin{itemize}
-    \item Basic verbs display little variation in the aorist (and no variation at all in the habitualis)
-    \item Most variation is observed for derived and causative verbs:
+    \item Distribution of aorist suffixes is very consistent across the data
+    \item Derived and causative verbs show some variation:
     \begin{itemize}
-        \item Derived verbs: preference for auxiliary `be' in \citet{saidovaabusov2012} vs. `become' in \citet{alekseev2019} \\ BUT it seems that this is just a matter of personal taste for citation forms: examples in the dictionary entries show that both variants are possible
-        \item Causative verbs: full (older?) forms -\textit{malih-e} and -\textit{malih-u} in \citet{alekseev2019} vs. reduced form -\textit{mal-e} and synthetic -\textit{o} in \citet{saidovaabusov2012} \\ This might be interpreted as diachronic variation, since the data in \citet{alekseev2019} are older
+        \item Derived verbs: preference for auxiliary `be' in \citet{saidovaabusov2012} vs. `become' in \citet{alekseev2019} 
+        \item This seems to be a matter of personal taste
+        \item Causative verbs: full (older?) forms -\textit{malih-e} and -\textit{malih-u} in \citet{alekseev2019} vs. reduced form -\textit{mal-e} and synthetic -\textit{o} in \citet{saidovaabusov2012}, reflecting diachronic developments
     \end{itemize}
 \end{itemize}
 \end{frame}
@@ -539,6 +662,15 @@ Variation seems to affect (to a greater extent) specific groups of words
 \end{frame}
 
 \begin{frame}{Variation}
+\begin{itemize}
+    \item In general more variation in the nominal than in the verbal paradigm
+    \item This might be due to the higher percentage of borrowed nouns with respect to verbs (it seems that verbs are rarely borrowed)
+    \item And to the fact that in general nouns are more numerous in the dictionaries
+    \item Also, in the nominal paradigm there are more variants
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Variation}
 How do we explain the variation observed?
 \begin{itemize}
     \item Idiolectal variation?
@@ -550,8 +682,6 @@ How do we explain the variation observed?
 
 \section{Methodological remarks}
 \begin{frame}{Methodological remarks}
-% Nina's presentation: how difficult it is to catch variation, even when you have two comparable databases like these
-
 \begin{itemize}
     \item Variation --- is something that is present in most languages, but it is not clear
     \begin{itemize}
@@ -561,7 +691,7 @@ variability \pause
     \end{itemize}
     \item Two similar datasets collected independently in a small language community approximately in the same time period can nevertheless display considerable variation
     \begin{itemize}
-        \item it is more clear, where to search for the variability, rather then what is vary
+        \item does not necessarily reflect variation, but shows where to look for it
     \end{itemize} 
     \item This demonstrates the importance of transparency in data collection \\ i.e. metadata on the speakers consulted
     \item And methodological decisions \\ e.g. what is included or not as a separate dictionary entry
@@ -574,7 +704,7 @@ variability \pause
 \begin{itemize}
     \item The availability of comparable material on which quantitative investigations can be conducted is a rare luck for such small languages like Botlikh
     \item This precious information can be used to provide numerical approximations for impressionistic observations reported in the available literature on the language
-    \item This is exactly the phylosophy of the Data-driven phonology
+    \item This is exactly the phylosophy of data-driven phonology
 \end{itemize}
 \end{frame}
 
